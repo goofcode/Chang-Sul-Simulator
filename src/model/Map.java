@@ -1,4 +1,4 @@
-package core;
+package model;
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
@@ -63,11 +63,11 @@ public class Map {
 	
 	public static Point getStartPoint(){return startPoint;}
 	public static double getStartDirection(){return startDirection;}
-	public static Color getColorValue(Point point){
+	public static Color getColorValue(Point point) throws ArrayIndexOutOfBoundsException{
 		return new Color(bufferedImage.getRGB(point.x, point.y));
 	}
 	
-	public static double getBrightness(Point point){
+	public static double getBrightness(Point point) throws ArrayIndexOutOfBoundsException{
 		Color color = new Color(bufferedImage.getRGB(point.x, point.y));
 		return Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), null)[2];
 	}

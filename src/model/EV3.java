@@ -1,4 +1,4 @@
-package core;
+package model;
 import java.awt.Point;
 
 import javax.script.ScriptEngine;
@@ -7,15 +7,16 @@ import javax.script.ScriptException;
 import javax.swing.JOptionPane;
 
 public class EV3 {
-	public static final double WIDTH = 50;
+
+	public static final double WIDTH = 42;
 	public static final double HEIGHT = 50;
 	
-	public static final double DIST_SENSOR_X = 27;
-	public static final double DIST_SENSOR_Y = 33;
+	public static final double DIST_SENSOR_X = 24;
+	public static final double DIST_SENSOR_Y = 29;
 	public static final double DIST_SENSOR = Math.sqrt(DIST_SENSOR_X*DIST_SENSOR_X + DIST_SENSOR_Y*DIST_SENSOR_Y);
 	public static final double ANGLE_SENSOR = Math.atan(DIST_SENSOR_X/DIST_SENSOR_Y);
-	
-	public static final double DIST_FRONT = 18;
+
+	public static final double DIST_FRONT = 10;
 	
 	
 	private ScriptEngine engine;
@@ -23,6 +24,9 @@ public class EV3 {
 	
 	private double[] pos;
 	private double direction;
+	
+	private boolean isRunning;
+	
 	
 	public EV3() {
 		pos = new double[2];
@@ -38,6 +42,7 @@ public class EV3 {
 	
 	public double getDirection(){return direction;}
 	public double[] getPos(){return pos;}
+	public boolean getIsRunning(){return isRunning;}
 	
 	public double[] getFrontCenterPos(){
 		double x = pos[0] + DIST_FRONT * Math.cos(direction);
@@ -61,37 +66,6 @@ public class EV3 {
 	
 	
 	public void rotateMotor(int motor1, int motor2){
-		/*
-		double u1 = motor1;
-		double u2 = motor2;
-		
-		double uWidth = WIDTH;
-		double uHeight = HEIGHT;
-
-		double angle = Math.atan(Math.abs(u2-u1)/uWidth);
-		double dist = (u1+u2+uHeight) * Math.cos(angle) /2; 
-	
-		
-		double deltaDivisor = dist; 
-				
-		double deltaX = (dist) * Math.cos(angle)/deltaDivisor; 
-		double deltaY = (u1>u2?1:-1)*(dist) * Math.sin(angle)/deltaDivisor;
-		double deltaAngle = (u1>u2?-1:1)*angle / deltaDivisor;
-		
-		for(int i=0; i<dist;i++){
-			pos[0] += deltaX; 
-			pos[1] += deltaY;
-			direction -= deltaAngle;
-			//System.out.println( getSensorLocation(true).x + ", " + getSensorLocation(true).y+ "   "+getSensorLocation(false).x+ ", " + getSensorLocation(false).y);
-			System.out.println(getBrightSensor1()+ ", "+ getBrightSensor2());
-			//System.out.println(pos[0] +", "+pos[1]);
-			try {
-				Thread.sleep(10);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		*/
 		
 		final double unitDist = 1;
 		final double unitVector = 1;
@@ -102,8 +76,8 @@ public class EV3 {
 
 		
 		double deltaAlpha = (motor1>motor2?-1:1)*Math.atan(Math.abs(u1-u2)/WIDTH);
-		System.out.printf((int)pos[0] +", "+(int)pos[1] +": ");
-		System.out.println( getSensorLocation(true).x + ", " + getSensorLocation(true).y+ "   "+getSensorLocation(false).x+ ", " + getSensorLocation(false).y);
+		;//System.out.printf((int)pos[0] +", "+(int)pos[1] +": ");
+		//System.out.println( getSensorLocation(true).x + ", " + getSensorLocation(true).y+ "   "+getSensorLocation(false).x+ ", " + getSensorLocation(false).y);
 		
 		//accumulate vector movement
 		for( int i =0 ; i<motorDivisor; i++){
@@ -126,21 +100,32 @@ public class EV3 {
 	}
 	
 	public double getBrightSensor1(){
-		return Map.getBrightness(getSensorLocation(true));
+		try{
+			return Map.getBrightness(getSensorLocation(true));
+		}catch(ArrayIndexOutOfBoundsException e){
+			return 0;
+		}
+		
 	}
 	public double getBrightSensor2(){
-		return Map.getBrightness(getSensorLocation(false));
+		try{
+			return Map.getBrightness(getSensorLocation(false));
+		}catch(ArrayIndexOutOfBoundsException e){
+			return 0;
+		}
 	}
 	
 	
 	public void startRunning(String code){
 		runCodeThread = new RunCodeThread(code);
 		runCodeThread.start();	
+		isRunning = true;
 	}
 	@SuppressWarnings("deprecation")
 	public void stopRunning(){
 		runCodeThread.stop();
 		runCodeThread = null;
+		isRunning = false;
 	}
 
 	class RunCodeThread extends Thread{
@@ -158,6 +143,7 @@ public class EV3 {
 			}catch (ScriptException e) {
 				JOptionPane.showMessageDialog(null, e.getMessage());
 			}finally {
+				isRunning = false;
 				JOptionPane.showMessageDialog(null, "finished");
 			}
 			

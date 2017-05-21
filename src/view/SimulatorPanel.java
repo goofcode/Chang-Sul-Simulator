@@ -1,4 +1,4 @@
-package frame;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -16,8 +16,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
-import core.EV3;
-import core.Map;
+import model.EV3;
+import model.Map;
 
 @SuppressWarnings("serial")
 public class SimulatorPanel extends JPanel{
@@ -37,7 +37,6 @@ public class SimulatorPanel extends JPanel{
 	
 	private SimulatingPanel simulatingPanel;
 	private RedrawThread redrawThread;
-	private boolean isSimulating;
 	
 	
 	public SimulatorPanel(MainFrame parentFrame, EV3 ev3) {
@@ -91,6 +90,7 @@ public class SimulatorPanel extends JPanel{
 	}
 	private void stopRedrawThread(){
 		redrawThread.interrupt();
+		redrawThread = null;
 	}
 	
 	
@@ -126,8 +126,7 @@ public class SimulatorPanel extends JPanel{
 	class StartButtonActionListener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			if(!isSimulating){
-				isSimulating = true;
+			if(!ev3.getIsRunning()){
 				ev3.startRunning(parentFrame.getCode());
 				startRedrawThread();
 			}
@@ -137,12 +136,10 @@ public class SimulatorPanel extends JPanel{
 	class ResetButtonActionListener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			if(isSimulating){
-				ev3.stopRunning();
-				stopRedrawThread();
-				redrawSimulatingPanel();
-				isSimulating = false;
-			}
+			ev3.stopRunning();
+			ev3.resetPosition();
+			stopRedrawThread();
+			redrawSimulatingPanel();
 		}
 	}
 	class PrevButtonActionListener implements ActionListener{

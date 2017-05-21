@@ -1,16 +1,16 @@
-package frame;
+package view;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
 import javax.swing.JFrame;
 
-import core.EV3;
+import model.EV3;
 
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame{
 	
-	private static final int WIDTH = 1475;
+	private static final int WIDTH = 1460;
 	private static final int HEIGHT = 600;
 	
 	private SimulatorPanel simulatorPanel;

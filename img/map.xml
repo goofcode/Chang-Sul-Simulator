@@ -8,8 +8,14 @@
     </map>
     <map>
         <filename>img\\map1.png</filename>
-        <startx>1000</startx>
-        <starty>50</starty>
+        <startx>910</startx>
+        <starty>115</starty>
+        <direction>180</direction>
+    </map>
+    <map>
+        <filename>img\\map2.png</filename>
+        <startx>940</startx>
+        <starty>130</starty>
         <direction>180</direction>
     </map>
 </maps>
