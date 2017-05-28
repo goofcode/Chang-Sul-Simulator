@@ -18,4 +18,10 @@
         <starty>130</starty>
         <direction>180</direction>
     </map>
+    <map>
+        <filename>img\\map3.png</filename>
+        <startx>55</startx>
+        <starty>370</starty>
+        <direction>0</direction>
+    </map>
 </maps>

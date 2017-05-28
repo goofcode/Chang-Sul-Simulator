@@ -8,6 +8,7 @@ import java.io.FileReader;
 import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import com.sun.javafx.image.IntPixelGetter;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -15,8 +16,10 @@ import org.xml.sax.InputSource;
 
 public class Map {
 
+    public static final Color blockColor = new Color(255,255,0);
+
 	private static final String mapDataXMLFileName = ".\\img\\map.xml";
-	
+
 	private static NodeList maps;
 	private static int currentMap;
 	
@@ -38,7 +41,8 @@ public class Map {
 			e.printStackTrace();
 		}
 	}
-	
+
+	/* map selection methods */
 	public static void changeToNextMap(){
 		if(currentMap != maps.getLength() -1)
 			changeMapTo(++currentMap);
@@ -60,24 +64,41 @@ public class Map {
 			e.printStackTrace();
 		}
 	}
-	
+	/* map selection methods*/
+
+
 	public static Point getStartPoint(){return startPoint;}
 	public static double getStartDirection(){return startDirection;}
 	public static Color getColorValue(Point point) throws ArrayIndexOutOfBoundsException{
 		return new Color(bufferedImage.getRGB(point.x, point.y));
 	}
 	
-	public static double getBrightness(Point point) throws ArrayIndexOutOfBoundsException{
-		Color color = new Color(bufferedImage.getRGB(point.x, point.y));
-		return Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), null)[2];
-	}
-	public static boolean isBlack(Point point){
-		if(getBrightness(point)>0.8) return false;
-		else return true;
-	}
-	public static boolean isWhite(Point point){
-		return !isBlack(point);
-	}
-	
+
+	public static double getBrightness(Point point) {
+        try {
+            Color color = new Color(bufferedImage.getRGB(point.x, point.y));
+            return Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), null)[2];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return 0;
+        }
+    }
+    public static int getDist(Point pos, double sensorDirection) {
+	    int dist = 0;
+	    Color color;
+	    try{
+	        while(true){
+	            color = getColorValue(new Point(
+	                    (int)(pos.x + dist*Math.cos(sensorDirection)),
+                        (int)(pos.y + dist*Math.sin(sensorDirection))));
+
+	            if(color.equals(blockColor))
+	                return dist;
+	            else dist++;
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+	        return Integer.MAX_VALUE;
+        }
+    }
 	public static BufferedImage getBufferedImage(){return bufferedImage;}
+
 }
