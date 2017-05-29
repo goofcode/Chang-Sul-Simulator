@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6845b79a-9a30-49c1-9684-c10a252ce42a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uml.ucls" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/map3.png" afterPath="$PROJECT_DIR$/img/map3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/map.xml" afterPath="$PROJECT_DIR$/img/map.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/EV3.java" afterPath="$PROJECT_DIR$/src/model/EV3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Main.java" afterPath="$PROJECT_DIR$/src/model/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Map.java" afterPath="$PROJECT_DIR$/src/model/Map.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/CodePanel.java" afterPath="$PROJECT_DIR$/src/view/CodePanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="98" column="36" lean-forward="false" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
+            <state relative-caret-position="244">
+              <caret line="69" column="59" lean-forward="true" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
               <folding>
                 <element signature="initializer##0;class#Map#0" expanded="false" />
                 <element signature="method#changeToNextMap#0;class#Map#0" expanded="false" />
@@ -40,7 +39,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="140">
               <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="e#100#101#0" expanded="true" />
@@ -50,29 +49,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EV3.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EV3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/EV3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1374">
-              <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="642">
+              <caret line="156" column="79" lean-forward="false" selection-start-line="156" selection-start-column="79" selection-end-line="156" selection-end-column="79" />
               <folding>
                 <element signature="method#EV3#0;class#EV3#0" expanded="false" />
                 <element signature="method#resetPosition#0;class#EV3#0" expanded="false" />
                 <element signature="method#getFrontCenterPos#0;class#EV3#0" expanded="false" />
                 <element signature="method#getSensorLocation#0;class#EV3#0" expanded="false" />
                 <element signature="method#setPosCorrespondingToFrontPos#0;class#EV3#0" expanded="false" />
+                <element signature="method#getBrightnessSensor#0;class#EV3#0" expanded="false" />
+                <element signature="method#getDistSensor#0;class#EV3#0" expanded="false" />
                 <element signature="method#startRunning#0;class#EV3#0" expanded="false" />
                 <element signature="class#RunCodeThread#0;class#EV3#0" expanded="false" />
+                <element signature="method#rotateMotor#0;class#EV3#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodePanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimulatorPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/SimulatorPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-644">
+              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding>
+                <element signature="e#481#508#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/CodePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="-280">
+              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,9 +126,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/model/Map.java" />
-        <option value="$PROJECT_DIR$/src/model/EV3.java" />
         <option value="$PROJECT_DIR$/src/model/Main.java" />
         <option value="$PROJECT_DIR$/src/view/CodePanel.java" />
+        <option value="$PROJECT_DIR$/template.txt" />
+        <option value="$PROJECT_DIR$/src/model/EV3.java" />
       </list>
     </option>
   </component>
@@ -125,6 +160,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -175,9 +213,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -626,11 +661,14 @@
       <updated>1495977442873</updated>
       <workItem from="1495977444714" duration="4575000" />
       <workItem from="1495987383999" duration="1225000" />
+      <workItem from="1496042731109" duration="13000" />
+      <workItem from="1496042790639" duration="31000" />
+      <workItem from="1496047584076" duration="1204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5800000" />
+    <option name="totallyTimeSpent" value="7048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
@@ -645,20 +683,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -684,6 +722,183 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/model/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="98" column="36" lean-forward="false" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
+          <folding>
+            <element signature="initializer##0;class#Map#0" expanded="false" />
+            <element signature="method#changeToNextMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeToPrevMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeMapTo#0;class#Map#0" expanded="false" />
+            <element signature="method#getColorValue#0;class#Map#0" expanded="false" />
+            <element signature="method#getBrightness#0;class#Map#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EV3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="method#EV3#0;class#EV3#0" expanded="false" />
+            <element signature="method#resetPosition#0;class#EV3#0" expanded="false" />
+            <element signature="method#getFrontCenterPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getSensorLocation#0;class#EV3#0" expanded="false" />
+            <element signature="method#setPosCorrespondingToFrontPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getBrightnessSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#getDistSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#startRunning#0;class#EV3#0" expanded="false" />
+            <element signature="class#RunCodeThread#0;class#EV3#0" expanded="false" />
+            <element signature="method#rotateMotor#0;class#EV3#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CodePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/SimulatorPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#481#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="98" column="36" lean-forward="false" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
+          <folding>
+            <element signature="initializer##0;class#Map#0" expanded="false" />
+            <element signature="method#changeToNextMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeToPrevMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeMapTo#0;class#Map#0" expanded="false" />
+            <element signature="method#getColorValue#0;class#Map#0" expanded="false" />
+            <element signature="method#getBrightness#0;class#Map#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EV3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="method#EV3#0;class#EV3#0" expanded="false" />
+            <element signature="method#resetPosition#0;class#EV3#0" expanded="false" />
+            <element signature="method#getFrontCenterPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getSensorLocation#0;class#EV3#0" expanded="false" />
+            <element signature="method#setPosCorrespondingToFrontPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getBrightnessSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#getDistSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#startRunning#0;class#EV3#0" expanded="false" />
+            <element signature="class#RunCodeThread#0;class#EV3#0" expanded="false" />
+            <element signature="method#rotateMotor#0;class#EV3#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CodePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="98" column="36" lean-forward="false" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
+          <folding>
+            <element signature="initializer##0;class#Map#0" expanded="false" />
+            <element signature="method#changeToNextMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeToPrevMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeMapTo#0;class#Map#0" expanded="false" />
+            <element signature="method#getColorValue#0;class#Map#0" expanded="false" />
+            <element signature="method#getBrightness#0;class#Map#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EV3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2156">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="method#EV3#0;class#EV3#0" expanded="false" />
+            <element signature="method#resetPosition#0;class#EV3#0" expanded="false" />
+            <element signature="method#getFrontCenterPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getSensorLocation#0;class#EV3#0" expanded="false" />
+            <element signature="method#setPosCorrespondingToFrontPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getBrightnessSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#getDistSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#startRunning#0;class#EV3#0" expanded="false" />
+            <element signature="class#RunCodeThread#0;class#EV3#0" expanded="false" />
+            <element signature="method#rotateMotor#0;class#EV3#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CodePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -720,47 +935,19 @@
             <element signature="method#getFrontCenterPos#0;class#EV3#0" expanded="false" />
             <element signature="method#getSensorLocation#0;class#EV3#0" expanded="false" />
             <element signature="method#setPosCorrespondingToFrontPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getBrightnessSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#getDistSensor#0;class#EV3#0" expanded="false" />
             <element signature="method#startRunning#0;class#EV3#0" expanded="false" />
             <element signature="class#RunCodeThread#0;class#EV3#0" expanded="false" />
+            <element signature="method#rotateMotor#0;class#EV3#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uml.ucls" />
-    <entry file="file://$PROJECT_DIR$/src/model/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="98" column="36" lean-forward="false" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
-          <folding>
-            <element signature="initializer##0;class#Map#0" expanded="false" />
-            <element signature="method#changeToNextMap#0;class#Map#0" expanded="false" />
-            <element signature="method#changeToPrevMap#0;class#Map#0" expanded="false" />
-            <element signature="method#changeMapTo#0;class#Map#0" expanded="false" />
-            <element signature="method#getColorValue#0;class#Map#0" expanded="false" />
-            <element signature="method#getBrightness#0;class#Map#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/EV3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1374">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="method#EV3#0;class#EV3#0" expanded="false" />
-            <element signature="method#resetPosition#0;class#EV3#0" expanded="false" />
-            <element signature="method#getFrontCenterPos#0;class#EV3#0" expanded="false" />
-            <element signature="method#getSensorLocation#0;class#EV3#0" expanded="false" />
-            <element signature="method#setPosCorrespondingToFrontPos#0;class#EV3#0" expanded="false" />
-            <element signature="method#startRunning#0;class#EV3#0" expanded="false" />
-            <element signature="class#RunCodeThread#0;class#EV3#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="140">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="e#100#101#0" expanded="true" />
@@ -773,15 +960,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="69" column="59" lean-forward="true" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+          <folding>
+            <element signature="initializer##0;class#Map#0" expanded="false" />
+            <element signature="method#changeToNextMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeToPrevMap#0;class#Map#0" expanded="false" />
+            <element signature="method#changeMapTo#0;class#Map#0" expanded="false" />
+            <element signature="method#getColorValue#0;class#Map#0" expanded="false" />
+            <element signature="method#getBrightness#0;class#Map#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/CodePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="-280">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/SimulatorPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#481#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EV3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="156" column="79" lean-forward="false" selection-start-line="156" selection-start-column="79" selection-end-line="156" selection-end-column="79" />
+          <folding>
+            <element signature="method#EV3#0;class#EV3#0" expanded="false" />
+            <element signature="method#resetPosition#0;class#EV3#0" expanded="false" />
+            <element signature="method#getFrontCenterPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getSensorLocation#0;class#EV3#0" expanded="false" />
+            <element signature="method#setPosCorrespondingToFrontPos#0;class#EV3#0" expanded="false" />
+            <element signature="method#getBrightnessSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#getDistSensor#0;class#EV3#0" expanded="false" />
+            <element signature="method#startRunning#0;class#EV3#0" expanded="false" />
+            <element signature="class#RunCodeThread#0;class#EV3#0" expanded="false" />
+            <element signature="method#rotateMotor#0;class#EV3#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

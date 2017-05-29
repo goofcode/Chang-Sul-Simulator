@@ -1,0 +1,7 @@
+//line tracing
+while(true) {
+  if(ev3.getDistSensorNorth() < 100)
+    break;
+  else
+    ev3.rotateMotor(10,10);
+}

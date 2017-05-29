@@ -20,8 +20,8 @@
     </map>
     <map>
         <filename>img\\map3.png</filename>
-        <startx>55</startx>
-        <starty>370</starty>
+        <startx>85</startx>
+        <starty>240</starty>
         <direction>0</direction>
     </map>
 </maps>

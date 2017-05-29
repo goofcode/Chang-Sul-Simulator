@@ -154,9 +154,7 @@ public class EV3 {
 	}
 	public double getBrightSensor1(){return getBrightnessSensor(LEFT_COLOR_SENSOR);}
 	public double getBrightSensor2(){return getBrightnessSensor(RIGHT_COLOR_SENSOR);}
-	public double getDistSensorNorth(){
-	    return getDistSensor(NORTH_DIST_SENSOR);
-    }
+	public double getDistSensorNorth(){return getDistSensor(NORTH_DIST_SENSOR);}
     public double getDistSensorSouth(){
         return getDistSensor(SOUTH_DIST_SENSOR);
     }

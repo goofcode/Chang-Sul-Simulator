@@ -37,6 +37,7 @@ public class CodePanel extends JPanel{
             "    break;\n" +
             "}\n";
 
+
     private JPanel buttonPanel;
     private JButton resetButton;
 
